@@ -53,8 +53,8 @@ void SpruceDrawMin(int x, int y)
 {
     txSetFillColor(TX_GREEN);
 
-    POINT spruce1[] = { {x - 40, y + 40},  {x, y},            {x + 40, y + 40} };
-    POINT spruce2[] = { {x - 40, y + 80},  {x, y + 40},       {x + 40, y + 80} };
+    POINT spruce1[] = { {x - 40, y + 40}, {x, y}, {x + 40, y + 40} };
+    POINT spruce2[] = { {x - 40, y + 80}, {x, y + 40}, {x + 40, y + 80} };
     POINT spruce3[] = { {x - 40, y + 120}, {x + 40, y + 120}, {x, y + 80} };
     POINT spruce4[] = { {x - 40, y + 160}, {x + 40, y + 160}, {x, y + 120} };
 
@@ -71,8 +71,8 @@ void SpruceDrawMax(int x, int y, int size)
 {
     txSetFillColor(TX_GREEN);
 
-    POINT spruce1[] = { {x - 40, y + 40 * size},  {x, y},                   {x + 40, y + 40 * size} };
-    POINT spruce2[] = { {x - 40, y + 80 * size},  {x, y + 40 * size},       {x + 40, y + 80 * size} };
+    POINT spruce1[] = { {x - 40, y + 40 * size}, {x, y}, {x + 40, y + 40 * size} };
+    POINT spruce2[] = { {x - 40, y + 80 * size}, {x, y + 40 * size}, {x + 40, y + 80 * size} };
     POINT spruce3[] = { {x - 40, y + 120 * size}, {x + 40, y + 120 * size}, {x, y + 80 * size} };
 
     txPolygon(spruce1, 3);
@@ -110,9 +110,9 @@ void FoxDraw(int x, int y)
 
     txCircle(x - 40, y - 120, 40);
 
-    POINT fox1[] = { {x-90, y},     {x, y},        {x-40, y-80} };
+    POINT fox1[] = { {x-90, y}, {x, y}, {x-40, y-80} };
     POINT fox2[] = { {x-15, y-135}, {x+25, y-120}, {x-15, y-105} };
-    POINT fox3[] = { {x-90, y},     {x-120, y-85}, {x-105, y-130}, {x-90, y} };
+    POINT fox3[] = { {x-90, y}, {x-120, y-85}, {x-105, y-130}, {x-90, y} };
     POINT fox4[] = { {x-40, y-150}, {x-20, y-180}, {x-10, y-120} };
     POINT fox5[] = { {x-40, y-150}, {x-60, y-180}, {x-70, y-120} };
 
@@ -130,10 +130,10 @@ void WolfDraw(int x, int y)
     POINT wolf[] =
     {
     {x - 90, y - 10},  {x - 150, y + 40}, {x - 120, y + 70}, {x - 30, y + 50},  {x - 30, y + 90},
-    {x, y + 80},     {x + 70, y + 100}, {x + 80, y + 80},  {x + 120, y + 80}, {x + 110, y + 40},
-    {x + 140, y + 40}, {x + 130, y},    {x + 150, y},    {x + 120, y - 30}, {x + 100, y - 40},
+    {x, y + 80},       {x + 70, y + 100}, {x + 80, y + 80},  {x + 120, y + 80}, {x + 110, y + 40},
+    {x + 140, y + 40}, {x + 130, y},      {x + 150, y},      {x + 120, y - 30}, {x + 100, y - 40},
     {x + 120, y - 40}, {x + 80, y - 50},  {x + 90, y - 60},  {x + 60, y - 80},  {x + 70, y - 90},
-    {x, y - 110},    {x - 10, y - 120}, {x - 30, y - 130}, {x - 30, y - 110}, {x - 20, y - 90},
+    {x, y - 110},      {x - 10, y - 120}, {x - 30, y - 130}, {x - 30, y - 110}, {x - 20, y - 90},
     {x - 50, y - 90},  {x - 60, y - 80},  {x - 70, y - 100}, {x - 90, y - 110}, {x - 90, y - 80},
     {x - 80, y - 70},  {x - 100, y - 30}
     };
@@ -191,7 +191,7 @@ void HomeDraw(int x, int y)
 
     POINT home1[] =
     {
-    {x + 80, y + 200},  {x + 80, y + 220},  {x, y + 240},     {x + 90, y + 230}, {x + 100, y + 260},
+    {x + 80, y + 200},  {x + 80, y + 220},  {x, y + 240},       {x + 90, y + 230}, {x + 100, y + 260},
     {x + 110, y + 230}, {x + 200, y + 240}, {x + 120, y + 220}, {x + 120, y + 200}
     };
     POINT home2[] = { {x, y},         {x+100, y-95},  {x+200, y} };
