@@ -127,7 +127,8 @@ void WolfDraw(int x, int y)
 {
     txSetColor(TX_BLACK);
     txSetFillColor(TX_BLACK);
-    POINT wolf[] = {
+    POINT wolf[] =
+    {
         {x - 90, y - 10},  {x - 150, y + 40}, {x - 120, y + 70}, {x - 30, y + 50},  {x - 30, y + 90},
         {x, y + 80},       {x + 70, y + 100}, {x + 80, y + 80},  {x + 120, y + 80}, {x + 110, y + 40},
         {x + 140, y + 40}, {x + 130, y},      {x + 150, y},      {x + 120, y - 30}, {x + 100, y - 40},
@@ -146,7 +147,8 @@ void HareDraw(int x, int y)
 {
     txSetColor(TX_GRAY);
     txSetFillColor(TX_GRAY);
-    POINT hare[] = {
+    POINT hare[] = 
+    {
         {x, y},           {x + 10, y + 50}, {x + 20, y + 50}, {x + 10, y + 30}, {x + 10, y},
         {x + 20, y - 10}, {x + 30, y - 10}, {x + 40, y - 20}, {x + 20, y - 40}, {x + 10, y - 70},
         {x, y - 90},      {x - 10, y - 70}, {x + 10, y - 40}, {x - 10, y - 20}, {x - 60, y},
@@ -163,7 +165,8 @@ void PigDraw(int x, int y)
 {
     txSetColor(TX_PINK);
     txSetFillColor(TX_PINK);
-    POINT pig[] = {
+    POINT pig[] = 
+    {
         {x, y},           {x, y - 5},       {x + 5, y - 5},   {x + 15, y - 10}, {x + 20, y - 20},
         {x + 30, y - 25}, {x + 25, y - 20}, {x + 30, y - 20}, {x + 30, y - 15}, {x + 32, y - 20},
         {x + 45, y - 15}, {x + 50, y - 10}, {x + 75, y - 10}, {x + 90, y + 5},  {x + 80, y},
@@ -186,7 +189,8 @@ void HomeDraw(int x, int y)
 
     txSetColor(TX_RED, 5);
 
-    POINT home1[] = {
+    POINT home1[] = 
+    {
         {x + 80, y + 200},  {x + 80, y + 220},  {x, y + 240},       {x + 90, y + 230}, {x + 100, y + 260},
         {x + 110, y + 230}, {x + 200, y + 240}, {x + 120, y + 220}, {x + 120, y + 200}
     };
