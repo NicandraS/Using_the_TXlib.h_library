@@ -69,8 +69,8 @@ void SpruceDraw(int x, int y, double sizeX, double sizeY, COLORREF spruceColor)
     {x,  y},                          {x + 20 * sizeX, y},              {x + 20 * sizeX, y - 10 * sizeY},
     {x + 50 * sizeX, y - 10 * sizeY}, {x + 20 * sizeX, y - 40 * sizeY}, {x + 40 * sizeX, y - 40 * sizeY},
     {x + 20 * sizeX, y - 60 * sizeY}, {x + 30 * sizeX, y - 60 * sizeY}, {x + 10 * sizeX, y - 80 * sizeY},
-    {x - 10 * sizeX, y - 60 * sizeY}, {x,  y - 60 * sizeY},             {x - 20 * sizeX, y - 40 * sizeY},
-    {x,  y - 40 * sizeY},             {x - 30 * sizeX, y - 10 * sizeY}, {x,  y-10 * sizeY}
+    {x - 10 * sizeX, y - 60 * sizeY}, {x,              y - 60 * sizeY}, {x - 20 * sizeX, y - 40 * sizeY},
+    {x,              y - 40 * sizeY}, {x - 30 * sizeX, y - 10 * sizeY}, {x,              y-10 * sizeY}
     };
     txPolygon(spruce, 15);
 }
@@ -101,11 +101,11 @@ void FoxDraw(int x, int y)
     txSetFillColor(TX_ORANGE);
     POINT fox[] =
     {
-    {x, y},             {x + 40, y - 40},  {x + 40, y - 70},  {x - 10,  y - 70},  {x - 50, y - 110},
-    {x - 30,  y - 110}, {x + 20, y - 150}, {x + 20, y - 170}, {x + 60,  y - 120}, {x + 50, y - 80},
-    {x + 80,  y - 30},  {x + 50, y + 40},  {x + 70, y + 60},  {x + 30,  y + 60},  {x + 20, y + 40},
+    {x, y},             {x + 40, y - 40},  {x + 40, y - 70},  {x - 10,  y - 70},  {x - 50,  y - 110},
+    {x - 30,  y - 110}, {x + 20, y - 150}, {x + 20, y - 170}, {x + 60,  y - 120}, {x + 50,  y - 80},
+    {x + 80,  y - 30},  {x + 50, y + 40},  {x + 70, y + 60},  {x + 30,  y + 60},  {x + 20,  y + 40},
     {x - 10,  y + 40},  {x,      y + 60},  {x - 50, y + 60},  {x - 100, y - 40},  {x - 110, y - 110},
-    {x - 100, y - 160}, {x - 70, y - 170}, {x - 50, y - 150}, {x - 70,  y - 40},  {x - 40, y}
+    {x - 100, y - 160}, {x - 70, y - 170}, {x - 50, y - 150}, {x - 70,  y - 40},  {x - 40,  y}
     };
     txPolygon(fox, 25);
 }
@@ -138,7 +138,7 @@ void HareDraw(int x, int y)
     {
     {x, y},           {x + 10, y + 50}, {x + 20, y + 50}, {x + 10, y + 30}, {x + 10, y},
     {x + 20, y - 10}, {x + 30, y - 10}, {x + 40, y - 20}, {x + 20, y - 40}, {x + 10, y - 70},
-    {x, y - 90},      {x - 10, y - 70}, {x + 10, y - 40}, {x - 10, y - 20}, {x - 60, y},
+    {x,      y - 90}, {x - 10, y - 70}, {x + 10, y - 40}, {x - 10, y - 20}, {x - 60, y},
     {x - 70, y + 30}, {x - 80, y + 20}, {x - 80, y + 30}, {x - 60, y + 50}, {x - 10, y + 50},
     {x - 20, y + 40}, {x - 30, y + 40}
     };
@@ -154,12 +154,12 @@ void PigDraw(int x, int y, double sizeX, double sizeY, COLORREF spruceColor)
     txSetFillColor(spruceColor);
     POINT pig[] =
     {
-    {x, y},                           {x, y - 5 * sizeY},             {x + 5 * sizeX,  y - 5 * sizeY},  {x + 15 * sizeX, y - 10 * sizeY}, {x + 20 * sizeX, y - 20 * sizeY},
-    {x + 30 * sizeX, y - 25 * sizeY}, {x + 25 * sizeX, y - 20*sizeY}, {x + 30 * sizeX, y - 20 * sizeY}, {x + 30 * sizeX, y - 15 * sizeY}, {x + 32 * sizeX, y - 20 * sizeY},
-    {x + 45 * sizeX, y - 15 * sizeY}, {x + 50 * sizeX, y - 10*sizeY}, {x + 75 * sizeX, y - 10 * sizeY}, {x + 90 * sizeX, y + 5 * sizeY},  {x + 80 * sizeX, y},
-    {x + 80 * sizeX, y + 15 * sizeY}, {x + 75 * sizeX, y + 15*sizeY}, {x + 75 * sizeX, y + 25 * sizeY}, {x + 70 * sizeX, y + 25 * sizeY}, {x + 70 * sizeX, y + 15 * sizeY},
-    {x + 60 * sizeX, y + 15 * sizeY}, {x + 40 * sizeX, y + 15*sizeY}, {x + 35 * sizeX, y + 20 * sizeY}, {x + 35 * sizeX, y + 25 * sizeY}, {x + 30 * sizeX, y + 25 * sizeY},
-    {x + 30 * sizeX, y + 15 * sizeY}, {x + 25 * sizeX, y + 10*sizeY}, {x + 15 * sizeX, y + 5 * sizeY},  {x + 5 * sizeX,  y + 5 * sizeY},  {x + 15 * sizeX, y}
+    {x, y},                           {x,              y - 5 * sizeY}, {x + 5 * sizeX,  y - 5 * sizeY},  {x + 15 * sizeX, y - 10 * sizeY}, {x + 20 * sizeX, y - 20 * sizeY},
+    {x + 30 * sizeX, y - 25 * sizeY}, {x + 25 * sizeX, y - 20*sizeY},  {x + 30 * sizeX, y - 20 * sizeY}, {x + 30 * sizeX, y - 15 * sizeY}, {x + 32 * sizeX, y - 20 * sizeY},
+    {x + 45 * sizeX, y - 15 * sizeY}, {x + 50 * sizeX, y - 10*sizeY},  {x + 75 * sizeX, y - 10 * sizeY}, {x + 90 * sizeX, y + 5 * sizeY},  {x + 80 * sizeX, y},
+    {x + 80 * sizeX, y + 15 * sizeY}, {x + 75 * sizeX, y + 15*sizeY},  {x + 75 * sizeX, y + 25 * sizeY}, {x + 70 * sizeX, y + 25 * sizeY}, {x + 70 * sizeX, y + 15 * sizeY},
+    {x + 60 * sizeX, y + 15 * sizeY}, {x + 40 * sizeX, y + 15*sizeY},  {x + 35 * sizeX, y + 20 * sizeY}, {x + 35 * sizeX, y + 25 * sizeY}, {x + 30 * sizeX, y + 25 * sizeY},
+    {x + 30 * sizeX, y + 15 * sizeY}, {x + 25 * sizeX, y + 10*sizeY},  {x + 15 * sizeX, y + 5 * sizeY},  {x + 5 * sizeX,  y + 5 * sizeY},  {x + 15 * sizeX, y}
     };
     txPolygon(pig, 30);
 }
