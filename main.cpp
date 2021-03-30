@@ -10,7 +10,6 @@ void WolfDraw    (int x, int y);
 void HareDraw    (int x, int y);
 void PigDraw     (int x, int y, int sizeX, int sizeY, COLORREF spruceColor);
 void TwitterDraw (int x, int y);
-
 void HomeDraw    (int x, int y);
 
 int main()
@@ -28,6 +27,7 @@ int main()
         x++;
         txSleep (10);
         }
+    
     KolobokDraw (400, 300);
     WolfDraw    (450, 500);
     HareDraw    (490, 200);
